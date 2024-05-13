@@ -1,6 +1,5 @@
 # Book_Review_Website - Specific description
-# 1. Functional requirements
-
+## 1. Functional requirements
 - Sign up *(The system sends a confirmation email when a new user account is created)*
 - Login
 - Read & Write reviews
@@ -10,8 +9,6 @@
 - Search book
 - Recommend book for user
 - Change profile
-
-# 2. Non-functional requirements
-
+## 2. Non-functional requirements
 - Down-time as min as possible
 - Synchronize between database and interface
