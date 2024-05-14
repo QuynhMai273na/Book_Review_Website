@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REMIXICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mainboard.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/search.css">
+
+    <title>BookReview - Share your thought</title>
+</head>
+
+<body>
+    <!--==================== HEADER & NAV====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class="ri-book-2-fill"></i>Book-Review
+            </a>
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="ri-home-4-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">
+                            <i class="ri-git-repository-commits-line"></i>
+                            <span>New Books</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Reviews</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">
+                            <i class="ri-bard-line"></i>
+                            <span>Recommend</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav_actions">
+                <!-- Theme button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- User button -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+            </div>
+        </nav>
+    </header>
+    <!--==================== SEARCH bar ====================-->
+    <div class="search">
+        <div class="search_components">
+            <span>Find your next book to read.</span>
+            <form action="" class="search_from">
+                <input type="search" placeholder="What are you looking for?" class="search_input">
+                <i class="ri-search-line search_button" id="search-button"></i>
+            </form>
+        </div>
+    </div>
+    <!-- =================== SEARCH RESULT==================== -->
+    <div class="search_result" id="search-result">
+        <form action="" class="search_form_1">
+            <input type="search" placeholder="What are you looking for?" class="search_input_1">
+            <i class="ri-search-line search_icon_1" id="search-icon"></i>
+        </form>
+        <i class="ri-close-line search_close" id="search-close"></i>
+
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login grid" id="login-content">
+        <form action="" class="login_form grid">
+            <h3 class="login_title">Log In</h3>
+
+            <div class="login_group grid">
+                <div>
+                    <label for="login-email" class="login_label">Email</label>
+                    <input type="email" placeholder="Write your email" id="login-email" class="login_input">
+                </div>
+                <div>
+                    <label for="login-pass" class="login_label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="login-pass" class="login_input">
+                </div>
+            </div>
+            <div>
+                <span class="login_signup">You do ot have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login_forgot"> You forgot your password
+                </a>
+
+                <button type="submit" class="login_button button">Log In</button>
+            </div>
+        </form>
+        <i class="ri-close-line login_close" id="login-close"></i>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <h1 class="home_title">
+                        Browse & <br>
+                        Choose Best Books
+                    </h1>
+                    <p class="home_description">
+                        Welcome to our book review website, where you can explore and discover the most compelling books, accompanied by detailed reviews and valuable insights from the book-loving community. 
+                    </p>
+                    <a href="#" class="button">Explore Now</a>
+                </div>
+                <div class="home_images">
+                    <div class="home_swiper swiper">
+                        <div>
+                            <article class="home_article">
+                                <img src="../../Data/img/home_book-1.png" alt="image" class="home_img">
+                            </article>
+                            <article class="home_article">
+                                <img src="../../Data/img/home_book-3.png" alt="image" class="home_img">
+                            </article>
+                            <article class="home_article">
+                                <img src="../../Data/img/home_book-2.png" alt="image" class="home_img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW BOOKS ====================-->
+        <section class="new section" id="new">
+
+        </section>
+
+        <!--==================== REVIEWS ====================-->
+        <section class="join section">
+
+        </section>
+
+        <!--==================== RECOMMEND ====================-->
+        <section class="testimonial section" id="testimonial">
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

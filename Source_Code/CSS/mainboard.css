@@ -1,0 +1,119 @@
+@import './style.css';
+/*============HEADER & NAV============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s, background-color .4s;
+}
+.nav{
+    height:var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: inline-flex;
+    align-items: center;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+.nav_logo i{
+    font-size: 1.25rem;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 768px){
+    .nav_menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--container-color);
+        box-shadow: 0 -4px 10px hsla(0, 0%, 0%, .15);
+        padding: 1.25rem 4rem;
+        transition: background-color .4s;
+    }
+    .nav_link span{
+        display: none;
+    }
+    .nav_link i{
+        font-size: 1.25rem;
+        opacity: 1;
+    }
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link{
+    color: var(--text-color);
+    transition: color .4s ;
+}
+.nav_link i{
+    font-size: 1.25rem;
+}
+.nav_link:hover{
+    color: var(--first-color);
+}
+.nav_actions{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav_actions i{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .4s;
+}
+.nav_actions i:hover{
+    color: var(--first-color);
+}
+/* ==============Search============= */
+.search{
+    position: fixed;
+    margin-top  : 56px;
+    width: 100%;
+    height: 25%;
+    z-index: 100;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.40),  rgba(128, 128, 128, 0.6)), url(../../Data/img/Shelf.png) center center / cover ;
+    background-attachment: fixed;
+    transition: top .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.25rem;
+
+}
+.search span{
+    color:whitesmoke;
+    font-weight: 450;
+    font-size: 25px;
+}
+.search_from{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    border: 1.5px solid var(--border-color);
+    padding-inline: 0.7rem;
+    margin: auto;
+}
+.search_from i{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+.search_from i:hover{
+    cursor: pointer;   
+}
+.search_input{
+    width: 100%;
+    padding-block: 1rem;
+    background-color: var(--container-color);
+    color: var(--text-color);
+}
