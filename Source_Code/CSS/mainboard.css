@@ -45,15 +45,15 @@
     .nav_link span{
         display: none;
     }
-    .nav_link i{
+    /* .nav_link i{
         display: flex;
         font-size: 1.25rem;
         visibility: visible;
-    }
+    } */
 }
-.nav_link i{
+/* .nav_link i{
     visibility: hidden;
-}
+} */
 /**/
 .nav_list{
     display: flex;
@@ -63,9 +63,9 @@
     color: var(--text-color);
     transition: color .4s ;
 }
-/* .nav_link i{
+.nav_link i{
     font-size: 1.25rem;
-} */
+}
 .nav_link:hover{
     color: var(--first-color);
 }
