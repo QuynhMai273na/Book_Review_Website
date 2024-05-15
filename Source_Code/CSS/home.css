@@ -1,0 +1,47 @@
+@import './style.css';
+/* ============HOME================ */
+/*Cần phải chỉnh để phần Home nối tiếp phần search chứ không được để phần search đè lên*/
+.home {
+    margin-top: 56px;
+}
+.home_swiper{
+    margin: initial;
+}
+
+.home_container{
+    display: flex;
+    padding-top: 1.5rem;    justify-content: space-between;
+    align-items: center;
+}
+
+.home_data{
+    display: inline;
+    text-align: center;
+}
+
+.home_title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+}
+
+.home_description{
+    margin-bottom: 2rem;
+}
+
+.home_images{
+    display: grid;
+}
+
+.home_article, .home_img{
+    width: 200px;
+    transition: scale .8s;
+}
+
+.home_article{
+    scale: .8;
+}
+
+ /*============SWIPER CLASS============*/
+.swiper-slide-active, .swiper-slide-duplicate-active{
+    scale: 1;
+}

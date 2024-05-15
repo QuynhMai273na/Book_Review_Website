@@ -9,6 +9,7 @@
     z-index: var(--z-fixed);
     transition: box-shadow .4s, background-color .4s;
 }
+
 .nav{
     height:var(--header-height);
     display: flex;
@@ -23,6 +24,9 @@
 }
 .nav_logo i{
     font-size: 1.25rem;
+}
+.nav_menu{
+    width: 40%;
 }
 
 /* Navigation for mobile devices */
@@ -42,10 +46,15 @@
         display: none;
     }
     .nav_link i{
+        display: flex;
         font-size: 1.25rem;
-        opacity: 1;
+        visibility: visible;
     }
 }
+.nav_link i{
+    visibility: hidden;
+}
+/**/
 .nav_list{
     display: flex;
     justify-content: space-between;
@@ -54,9 +63,9 @@
     color: var(--text-color);
     transition: color .4s ;
 }
-.nav_link i{
+/* .nav_link i{
     font-size: 1.25rem;
-}
+} */
 .nav_link:hover{
     color: var(--first-color);
 }
@@ -74,13 +83,19 @@
 .nav_actions i:hover{
     color: var(--first-color);
 }
+/*Add shadow header*/
+.shadow-header{
+    background-color: var(--container-color);
+    box-shadow: 2px 3.5px hsla(0, 0%, 0%, 0.2);
+}
+
 /* ==============Search============= */
 .search{
     position: fixed;
-    margin-top  : 56px;
+    top: 56px;
     width: 100%;
     height: 25%;
-    z-index: 100;
+    z-index: calc(var(--z-fixed) - 1);
     background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.40),  rgba(128, 128, 128, 0.6)), url(../../Data/img/Shelf.png) center center / cover ;
     background-attachment: fixed;
     transition: top .4s;
@@ -88,7 +103,6 @@
     justify-content: center;
     align-items: center;
     row-gap: 1.25rem;
-
 }
 .search span{
     color:whitesmoke;

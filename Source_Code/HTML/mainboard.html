@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- REMIXICON -->
+    <!--=============== REMIXICON ==============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="">
-
+    <!--=============== SWIPER CSS =============-->
+    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css">
+    <!--=================  CSS ===================== -->
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/mainboard.css">
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/search.css">
+    <link rel="stylesheet" href="../CSS/home.css">
 
     <title>BookReview - Share your thought</title>
 </head>
@@ -61,16 +62,6 @@
             </div>
         </nav>
     </header>
-    <!--==================== SEARCH bar ====================-->
-    <div class="search">
-        <div class="search_components">
-            <span>Find your next book to read.</span>
-            <form action="" class="search_from">
-                <input type="search" placeholder="What are you looking for?" class="search_input">
-                <i class="ri-search-line search_button" id="search-button"></i>
-            </form>
-        </div>
-    </div>
     <!-- =================== SEARCH RESULT==================== -->
     <div class="search_result" id="search-result">
         <form action="" class="search_form_1">
@@ -83,34 +74,48 @@
 
     <!--==================== LOGIN ====================-->
     <div class="login grid" id="login-content">
-        <form action="" class="login_form grid">
-            <h3 class="login_title">Log In</h3>
-
-            <div class="login_group grid">
-                <div>
-                    <label for="login-email" class="login_label">Email</label>
-                    <input type="email" placeholder="Write your email" id="login-email" class="login_input">
+            <form action="" class="login_form grid">
+                <h3 class="login_title">Log In</h3>
+    
+                <div class="login_group grid">
+                    <div>
+                        <label for="login-email" class="login_label">Email</label>
+                        <input type="email" placeholder="Write your email" id="login-email" class="login_input">
+                    </div>
+                    <div>
+                        <label for="login-pass" class="login_label">Password</label>
+                        <input type="password" placeholder="Enter your password" id="login-pass" class="login_input">
+                    </div>
                 </div>
                 <div>
-                    <label for="login-pass" class="login_label">Password</label>
-                    <input type="password" placeholder="Enter your password" id="login-pass" class="login_input">
+                    <span class="login_signup">You do ot have an account? <a href="#">Sign up</a>
+                    </span>
+    
+                    <a href="#" class="login_forgot"> You forgot your password
+                    </a>
+    
+                    <button type="submit" class="login_button button">Log In</button>
                 </div>
-            </div>
-            <div>
-                <span class="login_signup">You do ot have an account? <a href="#">Sign up</a>
-                </span>
-
-                <a href="#" class="login_forgot"> You forgot your password
-                </a>
-
-                <button type="submit" class="login_button button">Log In</button>
-            </div>
-        </form>
-        <i class="ri-close-line login_close" id="login-close"></i>
+            </form>
+            <i class="ri-close-line login_close" id="login-close"></i>
+        </div>
+            
     </div>
 
     <!--==================== MAIN ====================-->
     <main class="main">
+        <!--==================== SEARCH bar ====================-->
+        <section class="searchbar section">
+            <div class="search">
+                <div class="search_components">
+                    <span>Find your next book to read.</span>
+                    <form action="" class="search_from">
+                        <input type="search" placeholder="What are you looking for?" class="search_input">
+                        <i class="ri-search-line search_button" id="search-button"></i>
+                    </form>
+                </div>
+            </div>
+        </section>
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home_container container grid">
@@ -120,21 +125,27 @@
                         Choose Best Books
                     </h1>
                     <p class="home_description">
-                        Welcome to our book review website, where you can explore and discover the most compelling books, accompanied by detailed reviews and valuable insights from the book-loving community. 
+                        Welcome to our book review website, where you can explore and discover the most compelling
+                        books, accompanied by detailed reviews and valuable insights from the book-loving community.
                     </p>
                     <a href="#" class="button">Explore Now</a>
                 </div>
                 <div class="home_images">
+                    <!-- Slider main container -->
                     <div class="home_swiper swiper">
-                        <div>
-                            <article class="home_article">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <article class="home_article swiper-slide">
                                 <img src="../../Data/img/home_book-1.png" alt="image" class="home_img">
                             </article>
-                            <article class="home_article">
+                            <article class="home_article swiper-slide">
                                 <img src="../../Data/img/home_book-3.png" alt="image" class="home_img">
                             </article>
-                            <article class="home_article">
+                            <article class="home_article swiper-slide">
                                 <img src="../../Data/img/home_book-2.png" alt="image" class="home_img">
+                            </article>
+                            <article class="home_article swiper-slide">
+                                <img src="../../Data/img/home_book-4.png" alt="image" class="home_img">
                             </article>
                         </div>
                     </div>
@@ -167,10 +178,10 @@
 
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="../JS/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="../JS/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="../JS/main.js"></script>

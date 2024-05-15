@@ -13,7 +13,7 @@
   --border-color: hsl(230, 50%, 90%);
   --white-color: hsl(0, 0%, 100%);
   --body-color: hsl(230, 100%, 96%);
-  --container-color: hsl(230, 100%, 97%);
+  --container-color: hsl(200, 10%, 90%);
   --back-color: hsl(30, 54%, 80%);
   /* --back-color: #ffe5ce
 ; */
@@ -105,13 +105,13 @@ a {
 }
 
 img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   height: auto;
 }
 /*==========REUSABLE CSS CLASS============*/
 .container{
-    max-width: 1220px;
+    max-width: 100%;
     margin-inline: 1.5rem;
 }
 .grid{
@@ -130,7 +130,7 @@ img {
 .main{
     overflow: hidden;
 }
-
+/*================== BUTTON ================= */
 .button{
     display: inline-block;
     background-color: var(--first-color);
