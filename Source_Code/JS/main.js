@@ -74,11 +74,45 @@ let swiperHome = new Swiper('.home_swiper', {
         }
     }
   })
-/*=============== FEATURED SWIPER ===============*/
+/*=============== POPULAR SWIPER ===============*/
+let swiperPopular = new Swiper('.popular_swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
 
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
 
-/*=============== NEW SWIPER ===============*/
+    breakpoints: {
+        1150: {
+            slidesPerView: 4,
+            centeredSlides: false,
+        }
+    }
+  })
 
+/*=============== RECOMMEND SWIPER ===============*/
+let swiperRecommend = new Swiper('.recommend_swiper', {
+    loop: true,
+    spaceBetween: 16,
+    slidesPerView: 'auto',
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+    breakpoints: {
+        1150: {
+            slidesPerView: 4,
+        }
+    }
+  })
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 

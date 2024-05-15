@@ -1,8 +1,7 @@
-@import './style.css';
+@import './font_color.css';
 /* ============HOME================ */
-/*Cần phải chỉnh để phần Home nối tiếp phần search chứ không được để phần search đè lên*/
 .home {
-    margin-top: 56px;
+    margin-top: 7rem;
 }
 .home_swiper{
     margin: initial;
@@ -10,7 +9,8 @@
 
 .home_container{
     display: flex;
-    padding-top: 1.5rem;    justify-content: space-between;
+    padding: 1.5rem; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,6 +29,7 @@
 }
 
 .home_images{
+    width: 75%;
     display: grid;
 }
 

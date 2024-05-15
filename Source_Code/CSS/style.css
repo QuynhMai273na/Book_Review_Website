@@ -15,9 +15,9 @@
   --body-color: hsl(230, 100%, 96%);
   --container-color: hsl(200, 10%, 90%);
   --back-color: hsl(30, 54%, 80%);
-  /* --back-color: #ffe5ce
-; */
+  /* --back-color: #ffe5ce; */
   --back-color-hover:hsl(28, 74%, 64%);
+  --rating-color: hsl(39, 82%, 56%);
   
 
   /*========== Font and typography ==========*/
@@ -46,7 +46,7 @@
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 3.5rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 2.15rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -119,7 +119,7 @@ img {
     gap: 1.5rem;
 }
 .section{
-    padding-block: 5rem 1rem;
+    padding-block: 2.5rem 1rem;
 }
 .section__title{
     text-align: center;

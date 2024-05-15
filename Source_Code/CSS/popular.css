@@ -1,0 +1,99 @@
+
+@import './font_color.css';
+/*================== POPULAR ===================*/
+.section_title{
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    text-align: center; 
+}
+.popular_card{
+    position: relative;
+    text-align: center;
+    background-color: var(--container-color);
+    padding: 2rem;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    transition: border .4s, background-color .4s;
+}
+
+.popular_img{
+    width: 150px;
+    margin: 0 auto .75rem;
+}
+
+.popular_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: .5rem;
+}
+
+.popular_author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.popular_author .by{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+.popular_author .author_name{
+    color: var(--rating-color);    
+}
+
+.popular_card button{
+    cursor: pointer;
+}
+
+.popular_card .button{
+    font-size: small;
+    border-radius: 10px;
+    margin-top: .75rem;
+}
+
+.popular_actions{
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    position: absolute;
+    top: 2rem;
+    right: -3rem;
+    transition: right .4s;
+}
+.popular_actions button{
+    background: none;
+    font-size: 1.25rem;
+    color: var(--rating-color);
+}
+
+.popular_card:hover .popular_actions{
+    right: 3rem;
+}
+
+.popular_stars{
+    color: var(--rating-color);
+}
+
+/*Swiper class*/
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-button-prev, .swiper-button-next{
+    width: initial;
+    height: initial;
+    background-color: var(--back-color);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    padding: .25rem;
+    font-size: 1.25rem;
+    color: var(--white-color);
+    transition: border .4s background-color .4s;
+}
+.swiper-button-prev:hover, 
+.swiper-button-next:hover{
+    background-color: var(--back-color-hover);
+}
