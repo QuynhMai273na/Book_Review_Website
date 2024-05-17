@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/popular.css">
     <link rel="stylesheet" href="../CSS/recommend.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/scroll.css">
 
     <title>BookReview - Share your thought</title>
 </head>
@@ -30,25 +32,25 @@
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">
+                        <a href="#home" class="nav_link active-link">
                             <i class="ri-home-4-line"></i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#popular" class="nav_link">
                             <i class="ri-git-repository-commits-line"></i>
                             <span>Popular</span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#recommend" class="nav_link">
                             <i class="ri-bard-line"></i>
                             <span>Recommend</span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#reviews" class="nav_link">
                             <i class="ri-message-3-line"></i>
                             <span>Reviews</span>
                         </a>
@@ -76,7 +78,7 @@
 
     <!--==================== LOGIN ====================-->
     <div class="login grid" id="login-content">
-            <form action="" class="login_form grid">
+        <form action="" class="login_form grid">
                 <h3 class="login_title">Log In</h3>
     
                 <div class="login_group grid">
@@ -98,11 +100,10 @@
     
                     <button type="submit" class="login_button button">Log In</button>
                 </div>
-            </form>
-            <i class="ri-close-line login_close" id="login-close"></i>
-        </div>
-            
-    </div>
+        </form>
+        <i class="ri-close-line login_close" id="login-close"></i>
+    </div>       
+
 
     <!--==================== MAIN ====================-->
     <main class="main">
@@ -589,7 +590,7 @@
         </section>
 
         <!--==================== REVIEWS ====================-->
-        <section class="reviews section">
+        <section class="reviews section" id="recommend">
 
         </section>
 
@@ -597,12 +598,102 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer_container container grid">
+            <div>
+                <a href="#" class="footer_logo">
+                    <i class="ri-book-2-fill"></i>Book Reviews
+                </a>
+                <p class="footer_description">
+                    Find and explore the best <br>
+                    books from all your <br>
+                    favorite writers.
+                </p>
+            </div>
+            <div class="footer_data grid">
+                <div>
+                    <h3 class="footer_title">About</h3>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">Introduction</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer_link">Our team</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer_link">Objective</a>
+                        </li>
+                                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer_title">Help</h3>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">FAQs</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer_link">Privacy policy</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer_link">Update</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer_title">Contact</h3>
+                    <ul class="footer_links">
+                        <li>
+                            <address class="footer_info_address">
+                                Linh Trung ward, Thu Duc city <br>
+                                Ho Chi Minh city, Vietnam
+                            </address>
+                        </li>
+                 
+                        <li>
+                            <address class="footer_info_contact">
+                                nguyenquynhmai273na@gmail.com <br>
+                                0865-308-367
+                            </address>
+                        </li>
+                 
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer_title">Social</h3>
+                    <ul class="footer_links">
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/nguyenquynhmai.273/" target="_blank" class="footer_social_link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+    
+                            <a href="https://www.instagram.com/wyhn._.mi.a273/" target="_blank" class="footer_social_link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+    
+                            <a href="https://www.linkedin.com/" target="_blank" class="footer_social_link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                        </div>
+                        
+                    </ul>
+                </div>
 
+            </div>
+        </div>
+
+        <span class="footer_copy">
+            &#169; All Rights Reserved By QuynhMai
+        </span>
     </footer>
 
     <!--========== SCROLL UP ==========-->
-
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
     <script src="../JS/scrollreveal.min.js"></script>
 
